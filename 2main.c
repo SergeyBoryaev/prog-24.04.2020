@@ -21,7 +21,7 @@ int findMaxNotFullTree(Node *tree)
             maxRoot = tree->right;
             max = b;
         }
-        return 1;
+        return -10000;
     }
     if (tree->left && !tree->right)
     {
