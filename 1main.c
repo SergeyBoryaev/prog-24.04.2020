@@ -21,7 +21,7 @@ int findMaxFullTree(Node *tree)
             max = a;
             maxRoot = tree->left;
         }
-        return 1;
+        return -10000;
     }
     if (!tree->left && tree->right)
     {
@@ -31,7 +31,7 @@ int findMaxFullTree(Node *tree)
             max = a;
             maxRoot = tree->right;
         }
-        return 1;
+        return -10000;
     }
     if (!tree->left && !tree->right)
         return 1;
